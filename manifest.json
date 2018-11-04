@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "토저버",
+  "description": "불법 토토사이트를 감지해주는 사이트입니다.",
+  "version": "1.0",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icon/icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "<all_urls>",
+    "contextMenus",
+    "webNavigation"
+  ]
+}
+
+
+
